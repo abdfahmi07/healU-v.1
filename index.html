@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>healU</title>
+    <title>healU - Find Your Psychology</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link
       rel="stylesheet"
@@ -12,13 +12,12 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    "
-
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
-    <header class="header u_container">
-      <div class="navbar">
+    <header class="header">
+      <div class="navbar u_container">
         <div class="navbar-logo">
           <a href="#">
             <img
@@ -30,9 +29,19 @@
         </div>
         <nav class="navbar-list">
           <ul>
-            <li class="navbar-item"><a href="#">Services</a></li>
-            <li class="navbar-item"><a href="#">About us</a></li>
-            <li class="navbar-item"><a href="#">Contact us</a></li>
+            <li class="navbar-item"><a href="#services">Services</a></li>
+            <li class="navbar-item" id="about-menu">
+              <a href="#" class="about-link"
+                >About <i class="fas fa-chevron-down"></i
+              ></a>
+            </li>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-item"><a href="#about">About us</a></li>
+                <li class="dropdown-item"><a href="#biodata"> Biodata </a></li>
+              </ul>
+            </div>
+            <li class="navbar-item"><a href="#contact">Contact us</a></li>
           </ul>
           <ul>
             <li class="signin navbar-item"><a href="#">Sign in</a></li>
@@ -41,6 +50,11 @@
             </li>
           </ul>
         </nav>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
 
@@ -49,12 +63,10 @@
         <header class="hero-header">
           <h1 class="hero-title">Find the best psychology that suits you</h1>
           <p class="hero-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            natus sunt magnam molestiae reprehenderit quasi dicta esse ipsa
-            dolore eaque id dolorum, libero earum ipsam minus quisquam ea?
-            Adipisci, harum!
+            Provide solutions and options for those of you who are looking for a
+            "friends to confide" that comes from expert psychologists.
           </p>
-          <button class="cta-button">Get Started</button>
+          <a href="#"><button class="cta-button">Get Started</button></a>
         </header>
         <div class="hero-thumbnail">
           <img
@@ -65,7 +77,7 @@
         </div>
       </div>
 
-      <article class="service-content">
+      <article class="service-content" id="services">
         <section class="service-wrapper u_container">
           <header class="service-header">
             <h2>Get started with healU</h2>
@@ -78,10 +90,7 @@
               </div>
               <div class="service-desc">
                 <h3>Find the best psychologist</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium corrupti ab rem, animi sit qui excepturi beatae
-                </p>
+                <p>Find expert psychologists who match your personality.</p>
               </div>
             </div>
 
@@ -93,8 +102,8 @@
               <div class="service-desc">
                 <h3>Psychology Online Test</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium corrupti ab rem, animi sit qui excepturi beatae
+                  An psychology online test is available to temporarily diagnose
+                  your complaint.
                 </p>
               </div>
             </div>
@@ -110,8 +119,8 @@
               <div class="service-desc">
                 <h3>Diagnostics by expert psychologists</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium corrupti ab rem, animi sit qui excepturi beatae
+                  The psychologist of your choice will diagnose the complaints
+                  you have told on the online test.
                 </p>
               </div>
             </div>
@@ -124,8 +133,8 @@
               <div class="service-desc">
                 <h3>Schedule a meeting, phonecall, or videocall</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium corrupti ab rem, animi sit qui excepturi beatae
+                  Schedule your appointment with a psychologist, either in
+                  person or online.
                 </p>
               </div>
             </div>
@@ -138,8 +147,8 @@
               <div class="service-desc">
                 <h3>Get the best solution from them</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium corrupti ab rem, animi sit qui excepturi beatae
+                  You will get the best solution from them, either through a
+                  medicine or a habit that you need to improve.
                 </p>
               </div>
             </div>
@@ -147,7 +156,7 @@
         </section>
       </article>
 
-      <article class="about-content">
+      <article class="about-content" id="about">
         <div class="about-wrapper u_container">
           <div class="about-image">
             <img src="assets/images/about.jpg" alt="About Image" />
@@ -156,52 +165,127 @@
             <div class="about-desc">
               <h2>About us</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                dolor facere eos neque recusandae, totam velit dolores debitis
-                similique consectetur. Ex iusto ab delectus dicta officia illum.
-                Atque, ducimus deserunt.
+                We provide several services for those who are confused about
+                finding friends to confide in, by bringing them together with
+                expert psychologists who can listen to stories and provide the
+                best solutions for them.
               </p>
             </div>
             <div class="about-sosmed">
-              <a href=""><span class="fab fa-facebook-square"></span></a>
-              <a href=""><span class="fab fa-twitter"></span></a>
-              <a href=""><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-facebook-square"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="contact-content">
+      <article class="contact-content" id="contact">
         <header class="contact-title">
           <h2>Have some question?</h2>
           <p>
-            <span class="fas fa-map-marked-alt"></span>Jalan Sukatani, Depok,
+            <span class="fas fa-map-marker-alt"></span>Jalan Sukatani, Depok,
             Jawa Barat
           </p>
         </header>
         <div class="contact-wrapper u_container">
           <div class="contact-form">
-            <input
-              type="text"
-              class="input-form fullname"
-              placeholder="Fullname"
-            />
-            <input
-              type="text"
-              class="input-form email"
-              placeholder="Your Email"
-            />
-            <textarea
-              class="input-form message"
-              placeholder="Your Message"
-            ></textarea>
-            <button>Send Message</button>
+            <form action="#" autocomplete="off">
+              <input
+                type="text"
+                class="input-form fullname"
+                placeholder="Fullname"
+                required
+              />
+              <input
+                type="email"
+                class="input-form email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                class="input-form message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
           <div class="contact-image">
             <img src="assets/images/contact.png" alt="Contact us" />
           </div>
         </div>
       </article>
+
+      <aside id="biodata">
+        <article class="profile-card u_container">
+          <header>
+            <h2>Biodata</h2>
+          </header>
+
+          <section class="profile">
+            <div class="profile-thumb">
+              <img src="assets/images/profile.jpg" class="profile-img" />
+            </div>
+            <div class="profile-info">
+              <h3>Abdulloh Fahmi</h3>
+              <table>
+                <tr>
+                  <th>Gender</th>
+                  <td>Pria</td>
+                </tr>
+                <tr>
+                  <th>Tempat Lahir</th>
+                  <td>Brebes</td>
+                </tr>
+                <tr>
+                  <th>Tanggal Lahir</th>
+                  <td>08 Juli 2001</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>abdullohfahmi45@gmail.com</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </article>
+      </aside>
     </main>
+
+    <footer>
+      <hr class="u_container" />
+      <div class="footer u_container">
+        <div class="left-side">
+          <a href="">
+            <img
+              src="assets/images/logo.png"
+              alt="Footer Logo"
+              class="footer-logo"
+            />
+          </a>
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Submission project on dicoding "Belajar Dasar Pemrograman Web"
+          </p>
+        </div>
+        <div class="right-side">
+          <div class="download-app">
+            <a href="#"
+              ><img src="assets/images/playstore-badge.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="assets/images/appstrore-badge.png" alt=""
+            /></a>
+          </div>
+          <p class="footer-desc">Abdulloh Fahmi</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
