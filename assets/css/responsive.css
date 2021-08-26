@@ -1,0 +1,261 @@
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0px 20px;
+  }
+
+  .hero {
+    padding: 30px 30px 50px 40px;
+  }
+
+  .hero-header {
+    padding-top: 30px;
+  }
+
+  .hero-header h1.hero-title {
+    font-size: 2.625rem;
+  }
+
+  .service {
+    padding: 30px;
+  }
+
+  .service span {
+    top: 0px;
+  }
+
+  .about-body {
+    padding-right: 50px;
+  }
+
+  .contact-form {
+    padding: 40px 0px 80px 40px;
+  }
+
+  .contact-image img {
+    padding-right: 30px;
+  }
+
+  .profile-card {
+    width: 85%;
+  }
+
+  .profile-thumb img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .footer {
+    padding: 20px 30px;
+  }
+
+  .sticky {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .service-header h2,
+  .about-desc h2,
+  .contact-title h2,
+  .profile-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+    padding-bottom: 5px;
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .hamburger-menu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu span {
+    margin-bottom: 3px;
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .hero-header {
+    order: 1;
+    padding: 50px 15px;
+  }
+
+  .hero-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-header .cta-button {
+    width: 100%;
+  }
+
+  .service-wrapper {
+    padding: 40px 0px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .service-desc h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .about-image {
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  .about-body {
+    padding: 10px 15px;
+    padding-bottom: 30px;
+  }
+
+  .about-desc p,
+  .contact-title p {
+    font-size: 0.875rem;
+  }
+
+  .about-sosmed {
+    margin-top: 30px;
+  }
+
+  .contact-content {
+    clip-path: ellipse(174% 100% at center top);
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-image {
+    padding: 0px 15px;
+  }
+
+  .profile-card {
+    width: 100%;
+    padding: 0px 20px;
+    padding-bottom: 80px;
+  }
+
+  .profile {
+    height: auto;
+    overflow: inherit;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .profile-thumb {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -55px;
+    left: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #5dcc93;
+  }
+
+  .profile-info {
+    padding: 10px 20px 20px;
+    padding-top: 70px;
+  }
+
+  .profile-info h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .profile-info table {
+    text-align: left;
+  }
+
+  .profile-info table tbody {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+  }
+
+  .profile-info table th {
+    display: inline-block;
+    width: 122px;
+  }
+
+  .profile-info table tr {
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .footer .left-side {
+    order: 1;
+  }
+
+  .footer .left-side img {
+    display: none;
+  }
+
+  .footer p {
+    padding: 0px 20px 0px 10px;
+    font-size: 0.75rem;
+  }
+
+  .footer .download-app {
+    display: flex;
+  }
+
+  .footer .right-side p {
+    display: none;
+  }
+
+  .sticky {
+    margin: 0;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+  }
+}
